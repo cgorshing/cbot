@@ -1,0 +1,50 @@
+\documentclass[a4paper,12pt]{article}
+\begin{document}
+\title{cbot design}
+\author{Chad Gorshing}
+\date{9 Jan 2005}
+\maketitle
+\tableofcontents
+\newpage
+\section{Software Specification}
+
+The purpose of this document is to give a detailed technical design document
+concerning the architechture of the HTTP spider codenamed 'cbot'.  Throughout
+development the compliance to the robots standard~\cite{robotsStandard} is of
+an upmost importance. All requirements will try to be meet, as well as all
+\emph{highly} suggested specifications.
+
+This project was meant to be a learning project and nothing else.  A way to
+learn pattern recognition, the Java programming language, regular expressions,
+and database design (among many other reasons).
+
+\section{Modules}
+
+The project is broken up into specific \emph{modules}, I use this term lightly
+and the definition in the scope of this application is basically a group of
+classes that perform a similar function, it does not mean that a source code
+file is a module.
+
+\subsection{Retrieval}
+
+Upon starting the process it is possible to pass a parameter as the starting
+point of crawling. If no parameters are specified, then the process will
+continue on where it left off \ldots according to information in the database.
+
+\subsection{Robot Specification Validity}
+
+The application is meant to follow the robots.txt~\cite{robotsStandard} standard to the fullest extent. Most importantly 
+
+\subsection{Database Processing}
+
+\subsection{Domain/Site Submission}
+
+\section{Starting}
+
+The system will read all information from the database.  All information is repeatedly queried
+so any changes will take an immediate effect.
+
+\begin{thebibliography}{9}
+    \bibitem{robotsStandard} http://www.robotstxt.org
+\end{thebibliography}
+\end{document}
